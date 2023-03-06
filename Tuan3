@@ -1,90 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./Fontawesome_v6/css/all.css">
-</head>
+    <title>Document</title>
+    <Style>
+        body{
+            width: 1440px;
+            background-color: bisque;
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .head{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+            height: 60px;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            width: 280px;
+        }
+        .menuitem{
+            font-size: medium;
+            font-family: Arial;
+            color: gray;
+        }
+        .logo{
+        }
+        .account{
+            display: flex
+            ;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 370px;
+        }
+        #search{
+            width: 200px;
+            height: 35px;
+            border-radius: 5px;
+            border-color: rgb(203, 203, 203);
+            border-style: solid;
+        }
+        .usercart{
+            display: flex;
+            align-items: center;
+            height: 20px;
+            width: auto;
+        }
+        .banner{
+            position: relative; 
+            width: 100%;
+            height: 350px;
+        }
+        .intro{
+            position: absolute;
+            left: 120px;
+            top: 140px;
+            width: 450px;
+            height: 120px;
+            font-size: larger;
+            font-family: Arial;
+        }
+        .productlist{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 1940px;
+            background-color: white;
+        }
+        .footer{
+            width: 100%;
+            height: 430px;
+            background-color: black;
+        }
+        .tools{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            height: 185px;
+            font-size: larger;
+        }
+        .productmenu{
+            display: flex;
+            flex-direction: row;
+            width: 540px;
+            height: 55px;
+            color: rgb(65, 184, 124);
+            font-family: Arial;
+        }
+        .prdmnitem{
+            width: 180px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
 
+        }
+        #allproduct{
+            background-color: rgb(44, 185, 100);
+            color: white;
+            width: 180px;
+            height: 55px;
+        }
+        .toolright{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 400px;
+            height: 60px;
+        }
+        #searchproduct{
+            width: 240px;
+            height: 50px;
+            border-radius: 5px;
+            border-color: rgb(203, 203, 203);
+            border-style: solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #sort{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 135px;
+            background-color: rgba(227, 227, 227, 0.59);
+            font-family: Arial;
+            color: gray;
+            border-radius: 5px;
+        }
+    </Style>
+</head>
 <body>
     <div class="container">
-        <div class="header__menu">
-            <div class="wrap__menu">
-                <div class="item__header menu_left">
-                    <a href="#">Shop</a>
-                    <a href="#">Offers</a>
-                    <a href="#">Our story</a>
-                    <a href="#">Blog</a>
-                </div>
-                <div class="item__header align-center">
-                    <img src="./logo.png" alt="logo">
-                </div>
-                <div class="item__header control_right">
-                    <div class="btn__input">
-                        <i class="fa-light fa-magnifying-glass"></i>
-                        <input type="text" name="search" placeholder="Search product...">
-                    </div>
-                    <div>
-                        <img src="./Button 1 (1).png" alt="text-card">
-                    </div>
-                    <div>
-                        <img src="./account.png" alt="account">
-                    </div>
+        <div class="head">
+            <div class="menu">
+                <span class="menuitem">Shop</span>
+                <span class="menuitem">Offers</span>
+                <span class="menuitem">Our story</span>
+                <span class="menuitem">Blog</span>
+            </div>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="account">
+                <input type="text" placeholder="Search product" id="search">
+                <div class="usercart">
+                    <img src="" id="cart">
+                    <img src="BanHang.png" id="user">
                 </div>
             </div>
         </div>
-        <div class="slide__show">
-            <img src="./slise.png" alt="slide">
-            <div class="box_context">
-                <div>
-                    <div class="heading_size">Gift for your skin</div>
-                    <div class="text__size">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat officiis tempore trmlp
-                    </div>
+        <div class="banner">
+            <img src="account.png">
+            <div class="intro">
+                <h1>Gift for your skin</h1>
+                <p>Aliquip fugiat ipsum nostrud ex et eu incidiunt quis minim dolore excepteur voluptate</p>
+            </div>
+        </div>
+        <div class="productlist">
+            <div class="tools">
+                <div class="productmenu">
+                    <div class="prdmnitem" id="allproduct">All Products</div>
+                    <div class="prdmnitem">Face</div>
+                    <div class="prdmnitem">Body</div>
                 </div>
+                <div class="toolright">
+                    <input type="text" placeholder="Search product" id="searchproduct">
+                    <span id="sort">Sort by =</span>
+                </div>
+            </div>
+            <div class="container1">
+               
+            </div>
+        </div>
+        <div class="footer">
 
-            </div>
-        </div>
-        <div class="body__content">
-            <div class="select__top-product">
-                <div class="item__btn-select">
-                    All products
-                </div>
-                <div class="item__btn-select">
-                    Face
-                </div>
-                <div class="item__btn-select">
-                    Body
-                </div>
-            </div>
-            <div class="sort_by">
-                <div class="btn_search__line">
-                    <i class="fa-light fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search product...">
-                </div>
-                <div class="btn__sort_by">
-                    Sort by <i class="fa-light fa-bars-filter"></i>
-                </div>
-            </div>
-
-        </div>
-        <div class="result_product">
-            <div class="wrap__show-products">
-                <div class="item_product">
-
-                </div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            
         </div>
     </div>
 </body>
-
 </html>
